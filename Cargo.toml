@@ -13,5 +13,6 @@ crate-type = ["cdylib", "rlib"]
 ehttp = { git = "https://github.com/emilk/ehttp" }
 eframe = { git = "https://github.com/emilk/egui" }
 image = "0.23"
+scraper = "0.12"
 ureq = "2.4"
 
