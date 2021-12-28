@@ -1,0 +1,17 @@
+[package]
+name = "web0"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[features]
+
+[dependencies]
+ehttp = { git = "https://github.com/emilk/ehttp" }
+eframe = { git = "https://github.com/emilk/egui" }
+image = "0.23"
+ureq = "2.4"
+
