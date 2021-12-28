@@ -10,14 +10,14 @@ enum Method {
 
 /// A top panel bar to show url input field and other configurations.
 #[derive(Debug)]
-pub struct TopBar {
+pub struct Bar {
     url: String,
     method: Method,
     request_body: String,
     pub in_progress: Option<Receiver<Result<ureq::Response, ureq::Error>>>,
 }
 
-impl Default for TopBar {
+impl Default for Bar {
     fn default() -> Self {
         Self {
             url: String::new(),
@@ -28,7 +28,7 @@ impl Default for TopBar {
     }
 }
 
-impl Panel for TopBar {
+impl Panel for Bar {
     fn name(&self) -> &'static str {
         "Top Panel Bar"
     }
